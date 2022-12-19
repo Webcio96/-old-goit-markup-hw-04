@@ -1,0 +1,323 @@
+:root {
+    --deafult-dark-font: #212121;
+    --grey-font: #757575;
+    --white-font: #ffffff;
+    --logo-font: #000000;
+    --blue-font: #2196f3;
+    --white-background: #f5f4fa;
+    --footer-contact-font: #ffffff99;
+    --dark-background: #2f303a;
+    --border-header: #ececec;
+    --border-card: #eeeeee;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--deafult-dark-font);
+}
+.container {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+.nav-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 24px 0 25px;
+}
+.header-wrapper > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-wrapper {
+    border-bottom: 1px solid var(--border-header);
+}
+.section {
+    padding: 94px 0;
+}
+.main-links {
+    gap: 46px;
+}
+.upper-menu,
+.main-links {
+    display: flex;
+    align-items: center;
+}
+.contact-info {
+    display: flex;
+    gap: 50px;
+}
+.upper-menu {
+    gap: 93px;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.16;
+    color: var(--logo-font);
+    outline: none;
+}
+.main-links a:hover,
+.main-links a:focus,
+.contact:hover,
+.web {
+    color: var(--blue-font);
+    outline: none;
+}
+.project-button button:hover,
+.project-button button:focus {
+    color: var(--white-font);
+    background-color: var(--blue-font);
+}
+.main-links a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.main-links a,
+.project-button button {
+    color: var(--deafult-dark-font);
+}
+.main-links a,
+.contact-mail,
+.contact-tel {
+    text-decoration: none;
+}
+.contact-mail,
+.contact-tel {
+    color: var(--grey-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--white-font);
+    text-align: center;
+    margin: 106px 280px 30px;
+}
+.service-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    background-color: var(--blue-font);
+    color: var(--white-font);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 106px;
+    width: 200px;
+    height: 50px;
+}
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-header {
+    background-color: var(--dark-background);
+}
+.title-info {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.text-info {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--grey-font);
+}
+.articles {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+.our-work-title,
+.our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.our-work-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.sec-marg {
+    margin-top: -94px;
+}
+.our-team-list {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    margin: 0;
+}
+.workers-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.workplace {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--grey-font);
+    text-align: center;
+    display: block;
+    padding-bottom: 30px;
+    margin: 0;
+}
+.main-pad {
+    padding: 94px 0;
+}
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+.description {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--grey-font);
+}
+.projects-list,
+.our-work-list,
+.our-team-list,
+.main-links,
+.articles {
+    list-style-type: none;
+}
+.our-team-card {
+    background-color: var(--white-font);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.grey-bg {
+    background-color: var(--white-background);
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0;
+    gap: 30px;
+}
+.project-button button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    background-color: var(--white-background);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    width: 121px;
+    height: 38px;
+    padding: 0;
+}
+.project-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 54px;
+    gap: 8px;
+}
+.project-card {
+    background-color: var(--white-font);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.border {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    border: 1px solid var(--border-card);
+    border-top: 0;
+}
+.lower-menu a.logo {
+    color: var(--white-font);
+}
+.company-street,
+.lower-contact-mail,
+.lower-contact-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.lower-menu a.contact {
+    color: var(--footer-contact-font);
+}
+.company-street {
+    color: var(--white-font);
+}
+a.mail-underline {
+    text-decoration: underline;
+}
+.correspondence {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.lower-menu .contact:focus,
+.lower-menu .contact:hover,
+.contact:focus {
+    color: var(--blue-font);
+    outline: none;
+}
+.lower-contact-mail,
+.lower-contact-tel {
+    color: var(--grey-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    width: fit-content;
+    text-decoration: none;
+}
+.footer-wrapper {
+    padding: 60px 0;
+    background: var(--dark-background);
+}
+.footer-wrapper > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lower-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
