@@ -9,6 +9,7 @@
     --dark-background: #2f303a;
     --border-header: #ececec;
     --border-card: #eeeeee;
+    --bg-gradient: #2f303a66;
 }
 
 ul,
@@ -30,6 +31,7 @@ body {
     padding: 0;
     margin: 0 auto;
 }
+/* nagłówek */
 .nav-site {
     display: flex;
     justify-content: space-between;
@@ -74,23 +76,19 @@ body {
 }
 .main-links a:hover,
 .main-links a:focus,
-.contact:hover,
+.contact-info a:hover,
+.contact-info a:focus,
 .web {
     color: var(--blue-font);
     outline: none;
 }
-.project-button button:hover,
-.project-button button:focus {
-    color: var(--white-font);
-    background-color: var(--blue-font);
-}
+
 .main-links a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
 }
-.main-links a,
-.project-button button {
+.main-links a {
     color: var(--deafult-dark-font);
 }
 .main-links a,
@@ -105,6 +103,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
 }
+/* strona główna */
 .main-title {
     font-weight: 900;
     font-size: 44px;
@@ -135,6 +134,12 @@ body {
 }
 .main-header {
     background-color: var(--dark-background);
+    background-image: linear-gradient(
+            to right,
+            var(--bg-gradient),
+            var(--bg-gradient)
+        ),
+        url('/images/bg-image/image-bg.jpg');
 }
 .title-info {
     font-weight: 700;
@@ -195,8 +200,17 @@ body {
     padding-bottom: 30px;
     margin: 0;
 }
+/* Portfolio */
 .main-pad {
     padding: 94px 0;
+}
+.project-button button:hover,
+.project-button button:focus {
+    color: var(--white-font);
+    background-color: var(--blue-font);
+}
+.project-button button {
+    color: var(--deafult-dark-font);
 }
 .project-name {
     font-weight: 700;
@@ -250,7 +264,7 @@ body {
 .project-button {
     display: flex;
     justify-content: center;
-    padding-bottom: 54px;
+    margin-bottom: 54px;
     gap: 8px;
 }
 .project-card {
@@ -258,7 +272,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 .border {
     display: flex;
@@ -267,6 +280,7 @@ body {
     border: 1px solid var(--border-card);
     border-top: 0;
 }
+/* footer */
 .lower-menu a.logo {
     color: var(--white-font);
 }
@@ -292,8 +306,8 @@ a.mail-underline {
     flex-direction: column;
     gap: 9px;
 }
-.lower-menu .contact:focus,
-.lower-menu .contact:hover,
+.correspondence a:hover,
+.correspondence a:focus,
 .contact:focus {
     color: var(--blue-font);
     outline: none;
