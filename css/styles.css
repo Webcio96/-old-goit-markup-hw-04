@@ -10,6 +10,7 @@
     --border-header: #ececec;
     --border-card: #eeeeee;
     --bg-gradient: #2f303a66;
+    --social-color: #afb1b8;
 }
 
 ul,
@@ -58,10 +59,20 @@ body {
     display: flex;
     align-items: center;
 }
+.info-icons {
+    fill: var(--grey-font);
+}
 .contact-info {
     display: flex;
     gap: 50px;
 }
+.contact-info a:is(:hover, :focus) {
+    color: var(--blue-font);
+}
+.contact-info a:is(:hover, :focus) > .info-icons {
+    fill: var(--blue-font);
+}
+
 .upper-menu {
     gap: 93px;
 }
@@ -76,8 +87,6 @@ body {
 }
 .main-links a:hover,
 .main-links a:focus,
-.contact-info a:hover,
-.contact-info a:focus,
 .web {
     color: var(--blue-font);
     outline: none;
@@ -146,6 +155,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
 }
+
 .text-info {
     font-size: 14px;
     line-height: 1.71;
@@ -155,6 +165,14 @@ body {
     display: flex;
     gap: 30px;
     margin: 0;
+}
+.feature-box {
+    background-color: var(--white-background);
+    align-items: center;
+    border-radius: 4px;
+}
+.feature-icon {
+    position: absolute;
 }
 .our-work-title,
 .our-team-title {
@@ -197,8 +215,33 @@ body {
     color: var(--grey-font);
     text-align: center;
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     margin: 0;
+}
+.social-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.social-icon > use {
+    fill: var(--social-color);
+}
+.social-icons li > a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons li > a:is(:hover, :focus) {
+    background-color: var(--blue-font);
+}
+.social-icons li > a:is(:hover, :focus) > .social-icon use {
+    fill: var(--white-font);
 }
 /* Portfolio */
 .main-pad {
