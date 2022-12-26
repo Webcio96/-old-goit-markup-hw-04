@@ -243,6 +243,29 @@ body {
 .social-icons li > a:is(:hover, :focus) > .social-icon use {
     fill: var(--white-font);
 }
+.our-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.clients-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+}
+.clients-icons > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-color);
+    border-radius: 4px;
+}
 /* Portfolio */
 .main-pad {
     padding: 94px 0;
