@@ -153,7 +153,7 @@ body {
             var(--bg-gradient),
             var(--bg-gradient)
         ),
-        url('/images/bg-image/image-bg.jpg');
+        url('../images/bg-image/image-bg.jpg');
 }
 .title-info {
     font-weight: 700;
