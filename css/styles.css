@@ -11,6 +11,7 @@
     --border-card: #eeeeee;
     --bg-gradient: #2f303a66;
     --social-color: #afb1b8;
+    --social-lower-bg: #ffffff1a;
 }
 
 ul,
@@ -18,6 +19,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
     margin: 0;
     padding: 0;
@@ -266,6 +268,16 @@ body {
     border: 1px solid var(--social-color);
     border-radius: 4px;
 }
+.client-icon > use {
+    fill: var(--social-color);
+}
+.clients-icons > li:is(:hover, :focus) {
+    border: 1px solid var(--blue-font);
+}
+.clients-icons > li:is(:hover, :focus) > .client-icon use {
+    fill: var(--blue-font);
+}
+
 /* Portfolio */
 .main-pad {
     padding: 94px 0;
@@ -361,6 +373,12 @@ body {
 .lower-menu a.contact {
     color: var(--footer-contact-font);
 }
+.lower-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items: baseline;
+}
 .company-street {
     color: var(--white-font);
 }
@@ -400,4 +418,35 @@ a.mail-underline {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--white-font);
+    padding-bottom: 20px;
+}
+.social-icons-lower {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons-lower li > a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--social-lower-bg);
+}
+.social-icon-lower > use {
+    fill: var(--white-font);
+}
+
+.social-icons-lower li > a:is(:hover, :focus) {
+    background-color: var(--blue-font);
 }
