@@ -63,6 +63,7 @@ body {
 }
 .info-icons {
     fill: var(--grey-font);
+    margin-right: 10px;
 }
 .contact-info {
     display: flex;
@@ -173,8 +174,8 @@ body {
 }
 .feature-box {
     background-color: var(--white-background);
-    align-items: center;
     border-radius: 4px;
+    margin-bottom: 30px;
 }
 .feature-icon {
     position: absolute;
@@ -250,7 +251,6 @@ body {
 }
 .social-icons li > a:is(:hover, :focus) {
     background-color: var(--blue-font);
-    box-shadow: 0px 4px 4px 0px #00000040;
 }
 .social-icons li > a:is(:hover, :focus) > .social-icon use {
     fill: var(--white-font);
